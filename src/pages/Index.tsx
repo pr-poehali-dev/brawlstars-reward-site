@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Rewards from '@/components/Rewards';
+import HowTo from '@/components/HowTo';
+import Leaderboard from '@/components/Leaderboard';
+import FAQ from '@/components/FAQ';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import NotificationBanner from '@/components/NotificationBanner';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-brawl-dark">
+      <Navbar />
+      <Hero />
+      <Rewards />
+      <HowTo />
+      <Leaderboard />
+      <FAQ />
+      <Contacts />
+      <Footer />
+      <NotificationBanner />
     </div>
   );
 };
